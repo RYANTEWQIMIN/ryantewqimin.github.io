@@ -17,7 +17,7 @@
     .portrait-area{position:relative;isolation:isolate;margin:4px 16px 0 21px;padding:20px 16px 22px}.portrait-area:before{content:'';position:absolute;inset:50px 1px 5px 30px;z-index:-1;background:var(--yellow);border-radius:6px;transform:rotate(5deg)}.portrait-frame{background:#fff;padding:16px 16px 0;border:1px solid var(--line);box-shadow:0 15px 40px #23396812;transform:rotate(-4deg);border-radius:3px}.portrait-image{height:390px;position:relative;background:var(--paper);overflow:hidden;border-radius:1px}.portrait-image img[hidden],.placeholder[hidden]{display:none}.portrait-image img{display:block;width:100%;height:100%;object-fit:cover;object-position:center}.placeholder{height:100%;display:flex;align-items:center;justify-content:center;text-align:center;padding:30px}.placeholder-letter{font:italic 104px Georgia,serif;line-height:1;color:var(--blue);margin-bottom:21px;letter-spacing:-.07em}.placeholder p{font:italic 30px/1.2 Georgia,serif;color:var(--blue);margin:0}.caption{min-height:73px;display:flex;align-items:center;justify-content:space-between;gap:15px;color:var(--ink);font-size:12px;letter-spacing:.08em}.caption-name{font-size:22px;line-height:1;letter-spacing:0}.caption span:last-child{font:italic 20px Georgia,serif;letter-spacing:0;color:var(--blue)}.portrait-tag{position:absolute;right:-8px;top:0;z-index:2;background:var(--yellow);border:1px solid #ebc234;padding:11px 17px;font-size:12px;line-height:1.5;font-weight:700;letter-spacing:.08em;transform:rotate(6deg);box-shadow:0 3px 10px #1a24400a}
     .entrance-strip{border-top:1px solid var(--line);border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:20px;padding:23px 0;font-size:12px;letter-spacing:.075em;font-weight:500}.entrance-strip .museum-note{font:italic 18px Georgia,serif;letter-spacing:0;color:var(--muted)}.ticket{display:flex;align-items:center;gap:12px}.ticket-icon{font-size:22px;color:var(--blue)}
     .about{padding-block:105px 110px;display:grid;grid-template-columns:.65fr 1fr;gap:65px;align-items:start}.section-number{font:italic 52px Georgia,serif;letter-spacing:-.08em;color:var(--blue);margin:0 0 20px}.about h2{font-family:Manrope,sans-serif;font-size:42px;line-height:1.2;letter-spacing:-.045em;margin:0}.about-copy{padding-top:12px}.about-lead{font:32px/1.45 Georgia,serif;margin:0 0 19px;max-width:640px}.about-copy>p:not(.about-lead){font-size:18px;line-height:1.75;color:var(--muted);margin:0;max-width:610px}.education{display:flex;align-items:center;gap:14px;margin-top:28px;font-size:14px;color:var(--blue)}.education svg{width:26px;height:26px;flex-shrink:0}.education strong{display:block;font-weight:600;line-height:1.6}.education span{font-size:13px;color:var(--muted)}.footer{border-top:1px solid var(--line);padding:28px 0 31px;display:flex;justify-content:space-between;align-items:center;font-size:13px;color:var(--muted)}.footer a:hover{color:var(--blue)}
-    .entrance-footer{justify-content:center;text-align:center}
+    .entrance-footer{justify-content:center;flex-direction:column;gap:8px;text-align:center}.last-updated{font-size:14px;line-height:1.5;white-space:nowrap}
     @media(min-width:1550px){.hero{min-height:calc(100svh - 183px)}}
     @media(max-width:1050px){.container{width:calc(100% - 64px)}.hero{gap:25px;min-height:640px}.hero h1{font-size:clamp(3.8rem,7.4vw,5rem)}.portrait-area{margin:0;padding:16px 8px 16px}.portrait-image{height:350px}.portrait-frame{padding:12px 12px 0}.welcome{font-size:18px}.nav-note{display:none}.about{gap:40px}.about-lead{font-size:28px}}
     @media(max-width:740px){.container{width:calc(100% - 40px)}.header{height:89px}.brand-mark{width:35px;height:40px;font-size:26px}.brand-name{font-size:23px}.brand-sub{font-size:10px}.nav{gap:18px;font-size:13px}.hero{grid-template-columns:1fr;padding:45px 0 50px;gap:38px}.eyebrow{margin-bottom:20px;font-size:11px}.hero h1{font-size:clamp(3.8rem,11vw,5.5rem);letter-spacing:-.065em;line-height:1.05}.welcome{font-size:18px;max-width:450px;margin:23px 0 25px}.portrait-area{width:min(380px,calc(100% - 24px));justify-self:center;margin:0 0 0 -5px;padding:18px 7px 16px}.portrait-image{height:345px}.portrait-tag{right:-12px;font-size:11px}.caption{min-height:65px}.entrance-strip{font-size:10px;gap:8px;padding:20px 0}.entrance-strip .museum-note{font-size:15px}.entrance-strip .edition{display:none}.about{grid-template-columns:1fr;padding:64px 0 65px;gap:23px}.section-number{font-size:40px;margin-bottom:13px}.about h2{font-size:35px}.about-copy{padding-top:0}.about-lead{font-size:26px}.about-copy>p:not(.about-lead){font-size:17px}.footer{gap:16px;font-size:12px;padding:24px 0}.little-note{font-size:12px}}
@@ -31,7 +31,7 @@
     .collection-page{display:grid;grid-template-columns:.9fr 1.1fr;gap:70px;align-items:start;min-height:calc(100svh - 197px);padding:76px 0 70px}.collection-intro{padding-top:22px}.collection-page h1,.chapter-page h1{font-family:Manrope,sans-serif;font-size:clamp(46px,4.8vw,68px);font-weight:800;line-height:1.12;letter-spacing:-.055em;margin:0}.collection-page h1 span{color:var(--blue)}.collection-welcome{max-width:340px;font-size:19px;line-height:1.7;color:var(--muted);margin:25px 0 42px}.collection-ticket{display:inline-flex;align-items:center;gap:23px;background:var(--yellow);padding:23px 27px;transform:rotate(-3deg);border:1px solid #ebc234;border-radius:3px}.collection-count{font:italic 62px/1 Georgia,serif;letter-spacing:-.08em;color:var(--ink)}.collection-ticket>span:last-child{font-size:12px;line-height:1.9;font-weight:600;letter-spacing:.07em}.collection-list-heading{display:flex;justify-content:space-between;gap:20px;font-size:12px;font-weight:600;letter-spacing:.09em;padding:0 18px 19px;color:var(--muted)}.chapter-list{margin:0;padding:0;list-style:none;border-top:1px solid var(--line)}.chapter-list li{border-bottom:1px solid var(--line)}.chapter-link{display:grid;grid-template-columns:44px 1fr;gap:21px;align-items:center;min-height:81px;padding:19px 18px;border-radius:3px;transition:background .2s,color .2s}.chapter-link:hover{background:var(--paper);color:var(--blue)}.chapter-link:focus-visible{outline-offset:-3px;background:var(--paper)}.chapter-number{font:italic 26px/1.2 Georgia,serif;color:var(--blue);letter-spacing:-.06em}.chapter-title{font-family:Manrope,sans-serif;font-size:21px;font-weight:600;line-height:1.4;letter-spacing:-.02em}.chapter-link:hover .chapter-title{text-decoration:underline;text-underline-offset:5px;text-decoration-thickness:1px}.collection-footnote{font:italic 17px/1.5 Georgia,serif;color:var(--muted);padding:0 18px;margin:22px 0 0}.back-link{display:inline-block;color:var(--blue);font-size:14px;border-bottom:1px solid currentColor;padding-bottom:4px;margin-bottom:58px}.back-link:hover{color:var(--ink)}.chapter-page{min-height:calc(100svh - 197px);padding:43px 0 85px;max-width:850px}.chapter-page h1{max-width:800px;overflow-wrap:break-word}.chapter-empty{margin-top:42px;border-top:1px solid var(--line);padding-top:26px}.chapter-status{display:inline-block;padding:7px 12px;background:var(--yellow);font-size:12px;letter-spacing:.09em;font-weight:600;border-radius:3px}.chapter-empty p{font-size:19px;line-height:1.7;color:var(--muted);margin:18px 0 0}.collection-footer{gap:20px}.collection-footer a{color:var(--blue)}
     @media(max-width:1050px){.collection-page{gap:40px;padding-top:58px}.collection-page h1{font-size:52px}.chapter-title{font-size:19px}.chapter-link{gap:14px;padding-inline:13px}.collection-list-heading,.collection-footnote{padding-inline:13px}.collection-welcome{font-size:18px}}
     @media(max-width:740px){.collection-page{grid-template-columns:1fr;gap:38px;padding:41px 0 48px}.collection-intro{padding:0}.collection-page h1,.chapter-page h1{font-size:clamp(42px,9vw,56px)}.collection-page .eyebrow,.chapter-page .eyebrow{font-size:12px}.collection-welcome{font-size:17px;max-width:370px;margin:20px 0 24px}.collection-ticket{padding:12px 19px;gap:16px;transform:rotate(-2deg)}.collection-count{font-size:39px}.collection-ticket>span:last-child{font-size:12px;line-height:1.7}.chapter-link{min-height:79px;grid-template-columns:32px 1fr;gap:15px;padding:19px 10px}.chapter-title{font-size:18px}.chapter-number{font-size:24px}.collection-list-heading{font-size:12px;padding-inline:10px;padding-bottom:17px;letter-spacing:.04em}.collection-footnote{font-size:16px;padding-inline:10px;margin-top:19px}.collection-footer{align-items:flex-start;flex-wrap:wrap;font-size:12px}.chapter-page{padding:30px 0 60px;min-height:calc(100svh - 195px)}.back-link{margin-bottom:47px}.chapter-empty{margin-top:31px}.chapter-empty p{font-size:17px}}
-    .chapter-footer{justify-content:center;text-align:center}
+    .chapter-footer{justify-content:center;flex-direction:column;gap:8px;text-align:center}
     .chapter-story{max-width:720px;margin-top:42px;border-top:1px solid var(--line);padding-top:30px}.chapter-story>p{font-size:1.125rem;line-height:1.85;color:var(--muted);margin:0 0 24px}.chapter-story .story-intro{font-size:1.25rem;line-height:1.75;color:var(--ink)}.chapter-story .story-motto-intro{margin-bottom:14px;color:var(--ink)}.story-motto{margin:0;padding:24px 28px;background:var(--paper);border-left:3px solid var(--blue);border-radius:0 3px 3px 0}.story-motto p{margin:0;font:italic 1.5rem/1.6 Georgia,serif;color:var(--blue)}
     @media(max-width:740px){.chapter-story{margin-top:31px;padding-top:24px}.chapter-story>p{font-size:1.0625rem;margin-bottom:22px}.chapter-story .story-intro{font-size:1.125rem}.story-motto{padding:20px}.story-motto p{font-size:1.25rem}}
     .collection-page{grid-template-columns:1fr;gap:40px}
@@ -159,33 +159,48 @@
               </span>
               <span class="education-toggle"><span class="expand-label">Explore more</span><span class="collapse-label">Collapse description</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></span>
             </summary>
-            <div class="education-description"><p>During my senior year, I wanted to help Peking University return to the China Undergraduate Aircraft Design Innovation Competition after a six-year hiatus. Focusing on the timed cargo transport category, I independently authored the comprehensive technical design report and engineered the conceptual 3D aircraft model using SolidWorks. While we ultimately had to withdraw from the competition due to severe manpower constraints, I successfully completed the entire theoretical and conceptual design phases. As a graduating senior, I have archived my research, CAD models, and aerodynamic calculations to serve as a foundational blueprint, to inspire and guide next year's team to the finish line.</p><section class="project-gallery" data-project-gallery data-gallery-viewer="cuadc-gallery-viewer" aria-label="CUADC aircraft model photo gallery">
+            <div class="education-description"><p>During my senior year, I wanted to help Peking University return to the China Undergraduate Aircraft Design Innovation Competition after a six-year hiatus. Focusing on the timed cargo transport category, I independently authored the comprehensive technical design report and engineered the conceptual 3D aircraft model using SolidWorks. While we ultimately had to withdraw from the competition due to severe manpower constraints, I successfully completed the entire theoretical and conceptual design phases. As a graduating senior, I have archived my research, CAD models, and aerodynamic calculations to serve as a foundational blueprint, to inspire and guide next year's team to the finish line.</p><section class="project-gallery" data-project-gallery data-gallery-viewer="cuadc-gallery-viewer" aria-label="CUADC aircraft design and analysis photo gallery">
       <div class="gallery-stage">
-        <button class="gallery-image-button" type="button" data-gallery-enlarge aria-haspopup="dialog" aria-controls="cuadc-gallery-viewer" aria-label="Enlarge CUADC aircraft CAD model: angled view">
-          <img class="gallery-main-image" src="/assets/cuadc-cad-01-54e5db4916ea.png" alt="CUADC aircraft CAD model: angled view" width="843" height="428" loading="lazy" data-gallery-image>
+        <button class="gallery-image-button" type="button" data-gallery-enlarge aria-haspopup="dialog" aria-controls="cuadc-gallery-viewer" aria-label="Enlarge Normalized geometry of the Wortmann FX63-137 airfoil">
+          <img class="gallery-main-image" src="/assets/cuadc-analysis-01-91116cd89d12.png" alt="Normalized geometry of the Wortmann FX63-137 airfoil" width="824" height="624" loading="lazy" data-gallery-image>
           <span class="gallery-enlarge-label">View larger</span>
         </button>
         <button class="gallery-arrow gallery-previous" type="button" data-gallery-step="-1" aria-label="Previous photo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="m14 6-6 6 6 6"/></svg></button>
         <button class="gallery-arrow gallery-next" type="button" data-gallery-step="1" aria-label="Next photo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="m10 6 6 6-6 6"/></svg></button>
       </div>
-      <div class="gallery-caption"><span class="gallery-position" data-gallery-position aria-live="polite" aria-atomic="true">1 / 6</span></div>
+      <div class="gallery-caption"><span class="gallery-position" data-gallery-position aria-live="polite" aria-atomic="true">1 / 11</span></div>
       <div class="gallery-thumbnails" role="group" aria-label="Choose a photo">
-        <button class="gallery-thumbnail" type="button" data-gallery-index="0" data-caption="Angled view" aria-label="Show photo 1: Angled view" aria-current="true">
+        <button class="gallery-thumbnail" type="button" data-gallery-index="0" data-caption="FX63-137 airfoil geometry" aria-label="Show photo 1: FX63-137 airfoil geometry" aria-current="true">
+          <img src="/assets/cuadc-analysis-01-91116cd89d12.png" alt="Normalized geometry of the Wortmann FX63-137 airfoil" width="824" height="624" loading="lazy">
+        </button>
+        <button class="gallery-thumbnail" type="button" data-gallery-index="1" data-caption="FX63-137 aerodynamic coefficients" aria-label="Show photo 2: FX63-137 aerodynamic coefficients">
+          <img src="/assets/cuadc-analysis-02-c74fa0927819.png" alt="FX63-137 lift, drag, lift-to-drag ratio, and pitching-moment plots" width="1500" height="1254" loading="lazy">
+        </button>
+        <button class="gallery-thumbnail" type="button" data-gallery-index="2" data-caption="CFD boundary-layer mesh" aria-label="Show photo 3: CFD boundary-layer mesh">
+          <img src="/assets/cuadc-analysis-03-0bf2455e7ee9.png" alt="CFD mesh and boundary-layer refinement around the FX63-137 airfoil" width="812" height="446" loading="lazy">
+        </button>
+        <button class="gallery-thumbnail" type="button" data-gallery-index="3" data-caption="CFD convergence residuals" aria-label="Show photo 4: CFD convergence residuals">
+          <img src="/assets/cuadc-analysis-04-12b9ebcf8c48.png" alt="CFD residual curves at the design angle of attack" width="810" height="378" loading="lazy">
+        </button>
+        <button class="gallery-thumbnail" type="button" data-gallery-index="4" data-caption="Surface y-plus distribution" aria-label="Show photo 5: Surface y-plus distribution">
+          <img src="/assets/cuadc-analysis-05-8dd15a987a4c.png" alt="FX63-137 surface y-plus distribution at the design angle of attack" width="686" height="484" loading="lazy">
+        </button>
+        <button class="gallery-thumbnail" type="button" data-gallery-index="5" data-caption="Angled view" aria-label="Show photo 6: Angled view">
           <img src="/assets/cuadc-cad-01-54e5db4916ea.png" alt="CUADC aircraft CAD model: angled view" width="843" height="428" loading="lazy">
         </button>
-        <button class="gallery-thumbnail" type="button" data-gallery-index="1" data-caption="Top view" aria-label="Show photo 2: Top view">
+        <button class="gallery-thumbnail" type="button" data-gallery-index="6" data-caption="Top view" aria-label="Show photo 7: Top view">
           <img src="/assets/cuadc-cad-02-8f548a307493.png" alt="CUADC aircraft CAD model: top view" width="951" height="810" loading="lazy">
         </button>
-        <button class="gallery-thumbnail" type="button" data-gallery-index="2" data-caption="Alternate angled view" aria-label="Show photo 3: Alternate angled view">
+        <button class="gallery-thumbnail" type="button" data-gallery-index="7" data-caption="Alternate angled view" aria-label="Show photo 8: Alternate angled view">
           <img src="/assets/cuadc-cad-03-06302c4bd050.png" alt="CUADC aircraft CAD model: alternate angled view" width="846" height="418" loading="lazy">
         </button>
-        <button class="gallery-thumbnail" type="button" data-gallery-index="3" data-caption="Straight-on view" aria-label="Show photo 4: Straight-on view">
+        <button class="gallery-thumbnail" type="button" data-gallery-index="8" data-caption="Straight-on view" aria-label="Show photo 9: Straight-on view">
           <img src="/assets/cuadc-cad-04-fea5cef98ad7.png" alt="CUADC aircraft CAD model: straight-on view" width="1073" height="335" loading="lazy">
         </button>
-        <button class="gallery-thumbnail" type="button" data-gallery-index="4" data-caption="Fuselage and wing detail" aria-label="Show photo 5: Fuselage and wing detail">
+        <button class="gallery-thumbnail" type="button" data-gallery-index="9" data-caption="Fuselage and wing detail" aria-label="Show photo 10: Fuselage and wing detail">
           <img src="/assets/cuadc-cad-05-7e5a3f6de189.png" alt="CUADC aircraft CAD model: fuselage and wing detail" width="1600" height="624" loading="lazy">
         </button>
-        <button class="gallery-thumbnail" type="button" data-gallery-index="5" data-caption="Tail assembly detail" aria-label="Show photo 6: Tail assembly detail">
+        <button class="gallery-thumbnail" type="button" data-gallery-index="10" data-caption="Tail assembly detail" aria-label="Show photo 11: Tail assembly detail">
           <img src="/assets/cuadc-cad-06-248ae264c31f.png" alt="CUADC aircraft CAD model: tail assembly detail" width="1136" height="801" loading="lazy">
         </button>
       </div>
@@ -205,7 +220,28 @@
               </span>
               <span class="education-toggle"><span class="expand-label">Explore more</span><span class="collapse-label">Collapse description</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></span>
             </summary>
-            <div class="education-description"><p>For this project, I developed a Python-based numerical program utilizing the panel method to calculate the aerodynamic coefficients of an airfoil. I designed and implemented computational procedures to discretize the airfoil geometry into distinct panels, allowing the program to estimate flow characteristics and evaluate critical parameters like the lift coefficient and pressure distribution. Building this tool from scratch bridged theoretical concepts with practical application, significantly strengthening my proficiency in aerodynamic theory, numerical methods, and Python engineering computation.</p></div>
+            <div class="education-description"><p>For this project, I developed a Python-based numerical program utilizing the panel method to calculate the aerodynamic coefficients of an airfoil. I designed and implemented computational procedures to discretize the airfoil geometry into distinct panels, allowing the program to estimate flow characteristics and evaluate critical parameters like the lift coefficient and pressure distribution. Building this tool from scratch bridged theoretical concepts with practical application, significantly strengthening my proficiency in aerodynamic theory, numerical methods, and Python engineering computation.</p><section class="project-gallery" data-project-gallery data-gallery-viewer="airfoil-gallery-viewer" aria-label="Numerical Calculation of Airfoil photo gallery">
+      <div class="gallery-stage">
+        <button class="gallery-image-button" type="button" data-gallery-enlarge aria-haspopup="dialog" aria-controls="airfoil-gallery-viewer" aria-label="Enlarge Airfoil panel diagram showing control points and a surface normal">
+          <img class="gallery-main-image" src="/assets/airfoil-analysis-01-443b74592465.png" alt="Airfoil panel diagram showing control points and a surface normal" width="1130" height="456" loading="lazy" data-gallery-image>
+          <span class="gallery-enlarge-label">View larger</span>
+        </button>
+        <button class="gallery-arrow gallery-previous" type="button" data-gallery-step="-1" aria-label="Previous photo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="m14 6-6 6 6 6"/></svg></button>
+        <button class="gallery-arrow gallery-next" type="button" data-gallery-step="1" aria-label="Next photo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="m10 6 6 6-6 6"/></svg></button>
+      </div>
+      <div class="gallery-caption"><span class="gallery-position" data-gallery-position aria-live="polite" aria-atomic="true">1 / 3</span></div>
+      <div class="gallery-thumbnails" role="group" aria-label="Choose a photo">
+        <button class="gallery-thumbnail" type="button" data-gallery-index="0" data-caption="Panel method geometry" aria-label="Show photo 1: Panel method geometry" aria-current="true">
+          <img src="/assets/airfoil-analysis-01-443b74592465.png" alt="Airfoil panel diagram showing control points and a surface normal" width="1130" height="456" loading="lazy">
+        </button>
+        <button class="gallery-thumbnail" type="button" data-gallery-index="1" data-caption="NACA 4412 calculation results" aria-label="Show photo 2: NACA 4412 calculation results">
+          <img src="/assets/airfoil-analysis-02-ebbcbe6bb802.png" alt="NACA 4412 lift, lift-curve slope, and surface-pressure plots" width="1390" height="406" loading="lazy">
+        </button>
+        <button class="gallery-thumbnail" type="button" data-gallery-index="2" data-caption="Annotated lift-curve slope" aria-label="Show photo 3: Annotated lift-curve slope">
+          <img src="/assets/airfoil-analysis-03-cba4bb14f2d4.png" alt="NACA 4412 results with an annotated lift-curve slope" width="1168" height="324" loading="lazy">
+        </button>
+      </div>
+    </section></div>
           </details>
           <div class="project-report">
             <a class="project-report-link" href="/downloads/airfoil-project-file-57e7acde0a95.zip" download aria-label="Download Project Doc for Numerical Calculation of Airfoil">Download Project Doc</a>
@@ -221,7 +257,43 @@
               </span>
               <span class="education-toggle"><span class="expand-label">Explore more</span><span class="collapse-label">Collapse description</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></span>
             </summary>
-            <div class="education-description"><p>As a core member of a four-person team developing this project, I led both the embedded systems programming and structural hardware design. I engineered a complete environmental monitoring module using an ESP32 microcontroller programmed with MicroPython, which collected data from multiple sensors (temperature, humidity, flame, human presence, light, and air quality) and transmitted it to a custom, real-time web dashboard via Wi-Fi. Simultaneously, I designed the leader drone's fuselage in SolidWorks and validated its structural integrity through ANSYS finite element analysis. After physical assembly and initial flight testing revealed stability issues due to structural asymmetry, I successfully redesigned the fuselage into a fully symmetrical model and optimized the overall system payload distribution by relocating the ESP32 module to the main drone.</p></div>
+            <div class="education-description"><p>As a core member of a four-person team developing this project, I led both the embedded systems programming and structural hardware design. I engineered a complete environmental monitoring module using an ESP32 microcontroller programmed with MicroPython, which collected data from multiple sensors (temperature, humidity, flame, human presence, light, and air quality) and transmitted it to a custom, real-time web dashboard via Wi-Fi. Simultaneously, I designed the leader drone's fuselage in SolidWorks and validated its structural integrity through ANSYS finite element analysis. After physical assembly and initial flight testing revealed stability issues due to structural asymmetry, I successfully redesigned the fuselage into a fully symmetrical model and optimized the overall system payload distribution by relocating the ESP32 module to the main drone.</p><section class="project-gallery" data-project-gallery data-gallery-viewer="esp32-drone-gallery-viewer" aria-label="ESP32 Environmental Monitoring Drone photo gallery">
+      <div class="gallery-stage">
+        <button class="gallery-image-button" type="button" data-gallery-enlarge aria-haspopup="dialog" aria-controls="esp32-drone-gallery-viewer" aria-label="Enlarge ESP32 drone prototype with white frame, sensors, and illuminated electronics">
+          <img class="gallery-main-image" src="/assets/esp32-drone-01-7e9e855a73b1.jpg" alt="ESP32 drone prototype with white frame, sensors, and illuminated electronics" width="605" height="614" loading="lazy" data-gallery-image>
+          <span class="gallery-enlarge-label">View larger</span>
+        </button>
+        <button class="gallery-arrow gallery-previous" type="button" data-gallery-step="-1" aria-label="Previous photo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="m14 6-6 6 6 6"/></svg></button>
+        <button class="gallery-arrow gallery-next" type="button" data-gallery-step="1" aria-label="Next photo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="m10 6 6 6-6 6"/></svg></button>
+      </div>
+      <div class="gallery-caption"><span class="gallery-position" data-gallery-position aria-live="polite" aria-atomic="true">1 / 8</span></div>
+      <div class="gallery-thumbnails" role="group" aria-label="Choose a photo">
+        <button class="gallery-thumbnail" type="button" data-gallery-index="0" data-caption="White-frame drone prototype" aria-label="Show photo 1: White-frame drone prototype" aria-current="true">
+          <img src="/assets/esp32-drone-01-7e9e855a73b1.jpg" alt="ESP32 drone prototype with white frame, sensors, and illuminated electronics" width="605" height="614" loading="lazy">
+        </button>
+        <button class="gallery-thumbnail" type="button" data-gallery-index="1" data-caption="Sensor mounting and wiring" aria-label="Show photo 2: Sensor mounting and wiring">
+          <img src="/assets/esp32-drone-02-18e4dae9be8e.jpg" alt="Underside of the white-frame drone showing mounted sensors and wiring" width="812" height="614" loading="lazy">
+        </button>
+        <button class="gallery-thumbnail" type="button" data-gallery-index="2" data-caption="Indoor hover test" aria-label="Show photo 3: Indoor hover test">
+          <img src="/assets/esp32-drone-03-512767c3f057.gif" alt="Drone hovering beside indoor laboratory equipment" width="576" height="1024" loading="lazy">
+        </button>
+        <button class="gallery-thumbnail" type="button" data-gallery-index="3" data-caption="Sensor assembly weighing" aria-label="Show photo 4: Sensor assembly weighing">
+          <img src="/assets/esp32-drone-04-e3a075b0b488.jpg" alt="Drone sensor assembly resting on a digital scale" width="458" height="611" loading="lazy">
+        </button>
+        <button class="gallery-thumbnail" type="button" data-gallery-index="4" data-caption="Electronics close-up" aria-label="Show photo 5: Electronics close-up">
+          <img src="/assets/esp32-drone-05-46beb272ac53.png" alt="Close-up of electronics and wiring beneath the drone" width="276" height="266" loading="lazy">
+        </button>
+        <button class="gallery-thumbnail" type="button" data-gallery-index="5" data-caption="Structural deformation analysis" aria-label="Show photo 6: Structural deformation analysis">
+          <img src="/assets/esp32-drone-06-a36a822889cf.png" alt="Ansys total-deformation contour of a braced frame" width="1243" height="614" loading="lazy">
+        </button>
+        <button class="gallery-thumbnail" type="button" data-gallery-index="6" data-caption="Red-frame drone prototype" aria-label="Show photo 7: Red-frame drone prototype">
+          <img src="/assets/esp32-drone-07-8cde52dff8f5.png" alt="Two views of the red-frame drone prototype and its mounted electronics" width="1796" height="921" loading="lazy">
+        </button>
+        <button class="gallery-thumbnail" type="button" data-gallery-index="7" data-caption="Indoor flight test area" aria-label="Show photo 8: Indoor flight test area">
+          <img src="/assets/esp32-drone-08-4dfbaa2d3e92.gif" alt="Indoor drone test area enclosed by safety netting" width="576" height="1024" loading="lazy">
+        </button>
+      </div>
+    </section></div>
           </details>
           <div class="project-report">
             <a class="project-report-link" href="/downloads/esp32-drone-project-file-73cb4fa8545a.zip" download aria-label="Download Project Doc for ESP32 Environmental Monitoring Drone">Download Project Doc</a>
@@ -237,7 +309,34 @@
               </span>
               <span class="education-toggle"><span class="expand-label">Explore more</span><span class="collapse-label">Collapse description</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></span>
             </summary>
-            <div class="education-description"><p>In a four-person team, I helped design and prototype a scaled ground-based clamping structure inspired by the &quot;chopstick&quot; mechanisms used in reusable rocket recovery systems. Using a 500 ml water bottle to simulate the dynamic rocket load, we successfully built and evaluated a functional physical prototype. I took ownership of the mechanical design phase, developing the complete 3D CAD model in SolidWorks and conducting extensive stress-strain analyses using Ansys Workbench. Simulating these forces allowed us to mathematically validate the structure's load-bearing capabilities and optimize the geometry before committing to 3D printing and physical testing.</p></div>
+            <div class="education-description"><p>In a four-person team, I helped design and prototype a scaled ground-based clamping structure inspired by the &quot;chopstick&quot; mechanisms used in reusable rocket recovery systems. Using a 500 ml water bottle to simulate the dynamic rocket load, we successfully built and evaluated a functional physical prototype. I took ownership of the mechanical design phase, developing the complete 3D CAD model in SolidWorks and conducting extensive stress-strain analyses using Ansys Workbench. Simulating these forces allowed us to mathematically validate the structure's load-bearing capabilities and optimize the geometry before committing to 3D printing and physical testing.</p><section class="project-gallery" data-project-gallery data-gallery-viewer="rocket-clamping-gallery-viewer" aria-label="Reusable Rocket Ground Clamping Structure Design And Testing photo gallery">
+      <div class="gallery-stage">
+        <button class="gallery-image-button" type="button" data-gallery-enlarge aria-haspopup="dialog" aria-controls="rocket-clamping-gallery-viewer" aria-label="Enlarge First and second CAD versions of the rocket ground clamping structure">
+          <img class="gallery-main-image" src="/assets/rocket-clamping-01-7df3b578741b.png" alt="First and second CAD versions of the rocket ground clamping structure" width="1200" height="564" loading="lazy" data-gallery-image>
+          <span class="gallery-enlarge-label">View larger</span>
+        </button>
+        <button class="gallery-arrow gallery-previous" type="button" data-gallery-step="-1" aria-label="Previous photo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="m14 6-6 6 6 6"/></svg></button>
+        <button class="gallery-arrow gallery-next" type="button" data-gallery-step="1" aria-label="Next photo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="m10 6 6 6-6 6"/></svg></button>
+      </div>
+      <div class="gallery-caption"><span class="gallery-position" data-gallery-position aria-live="polite" aria-atomic="true">1 / 5</span></div>
+      <div class="gallery-thumbnails" role="group" aria-label="Choose a photo">
+        <button class="gallery-thumbnail" type="button" data-gallery-index="0" data-caption="CAD design iterations" aria-label="Show photo 1: CAD design iterations" aria-current="true">
+          <img src="/assets/rocket-clamping-01-7df3b578741b.png" alt="First and second CAD versions of the rocket ground clamping structure" width="1200" height="564" loading="lazy">
+        </button>
+        <button class="gallery-thumbnail" type="button" data-gallery-index="1" data-caption="Bracing geometry and constraints" aria-label="Show photo 2: Bracing geometry and constraints">
+          <img src="/assets/rocket-clamping-02-35882ebe5e04.png" alt="Side-view CAD sketch with bracing geometry, constraints, and dimensions" width="1006" height="880" loading="lazy">
+        </button>
+        <button class="gallery-thumbnail" type="button" data-gallery-index="2" data-caption="Prototype weighing" aria-label="Show photo 3: Prototype weighing">
+          <img src="/assets/rocket-clamping-03-873f04d05ff5.png" alt="White clamping structure prototype being weighed on a digital scale" width="918" height="1216" loading="lazy">
+        </button>
+        <button class="gallery-thumbnail" type="button" data-gallery-index="3" data-caption="Bottle load test" aria-label="Show photo 4: Bottle load test">
+          <img src="/assets/rocket-clamping-04-dc894ccbbb00.png" alt="Bottle load test on the white clamping structure prototype" width="966" height="1274" loading="lazy">
+        </button>
+        <button class="gallery-thumbnail" type="button" data-gallery-index="4" data-caption="Prototype load testing" aria-label="Show photo 5: Prototype load testing">
+          <img src="/assets/rocket-clamping-05-3f18f7d5949a.png" alt="Two photographs of people standing on the clamping structure during load testing" width="960" height="1450" loading="lazy">
+        </button>
+      </div>
+    </section></div>
           </details>
           <div class="project-report">
             <a class="project-report-link" href="/downloads/rocket-clamping-structure-report-86a849f232dd.pdf" download aria-label="Download Project Doc for Reusable Rocket Ground Clamping Structure Design And Testing">Download Project Doc</a>
@@ -307,10 +406,34 @@
         
       </nav>
     </main>
-    <footer class="footer chapter-footer"><span>© 2026 Ryan’s Personal Museum</span></footer>
+    <footer class="footer chapter-footer"><span>© 2026 Ryan’s Personal Museum</span><span class="last-updated">Last updated: <time datetime="2026-10-08">8 October 2026</time></span></footer>
   </div>
   <dialog class="gallery-viewer" id="cuadc-gallery-viewer" aria-labelledby="cuadc-gallery-viewer-title">
-      <div class="gallery-viewer-header"><h2 id="cuadc-gallery-viewer-title">CUADC aircraft model</h2><button class="gallery-close" type="button" data-gallery-close aria-label="Close enlarged photo" autofocus><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg></button></div>
+      <div class="gallery-viewer-header"><h2 id="cuadc-gallery-viewer-title">CUADC aircraft design and analysis</h2><button class="gallery-close" type="button" data-gallery-close aria-label="Close enlarged photo" autofocus><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg></button></div>
+      <div class="gallery-stage gallery-viewer-stage">
+        <img class="gallery-viewer-image" data-viewer-image alt="">
+        <button class="gallery-arrow gallery-previous" type="button" data-viewer-step="-1" aria-label="Previous enlarged photo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="m14 6-6 6 6 6"/></svg></button>
+        <button class="gallery-arrow gallery-next" type="button" data-viewer-step="1" aria-label="Next enlarged photo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="m10 6 6 6-6 6"/></svg></button>
+      </div>
+      <div class="gallery-caption"><span class="gallery-position" data-viewer-position aria-live="polite" aria-atomic="true"></span></div>
+    </dialog><dialog class="gallery-viewer" id="airfoil-gallery-viewer" aria-labelledby="airfoil-gallery-viewer-title">
+      <div class="gallery-viewer-header"><h2 id="airfoil-gallery-viewer-title">Numerical Calculation of Airfoil</h2><button class="gallery-close" type="button" data-gallery-close aria-label="Close enlarged photo" autofocus><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg></button></div>
+      <div class="gallery-stage gallery-viewer-stage">
+        <img class="gallery-viewer-image" data-viewer-image alt="">
+        <button class="gallery-arrow gallery-previous" type="button" data-viewer-step="-1" aria-label="Previous enlarged photo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="m14 6-6 6 6 6"/></svg></button>
+        <button class="gallery-arrow gallery-next" type="button" data-viewer-step="1" aria-label="Next enlarged photo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="m10 6 6 6-6 6"/></svg></button>
+      </div>
+      <div class="gallery-caption"><span class="gallery-position" data-viewer-position aria-live="polite" aria-atomic="true"></span></div>
+    </dialog><dialog class="gallery-viewer" id="esp32-drone-gallery-viewer" aria-labelledby="esp32-drone-gallery-viewer-title">
+      <div class="gallery-viewer-header"><h2 id="esp32-drone-gallery-viewer-title">ESP32 Environmental Monitoring Drone</h2><button class="gallery-close" type="button" data-gallery-close aria-label="Close enlarged photo" autofocus><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg></button></div>
+      <div class="gallery-stage gallery-viewer-stage">
+        <img class="gallery-viewer-image" data-viewer-image alt="">
+        <button class="gallery-arrow gallery-previous" type="button" data-viewer-step="-1" aria-label="Previous enlarged photo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="m14 6-6 6 6 6"/></svg></button>
+        <button class="gallery-arrow gallery-next" type="button" data-viewer-step="1" aria-label="Next enlarged photo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="m10 6 6 6-6 6"/></svg></button>
+      </div>
+      <div class="gallery-caption"><span class="gallery-position" data-viewer-position aria-live="polite" aria-atomic="true"></span></div>
+    </dialog><dialog class="gallery-viewer" id="rocket-clamping-gallery-viewer" aria-labelledby="rocket-clamping-gallery-viewer-title">
+      <div class="gallery-viewer-header"><h2 id="rocket-clamping-gallery-viewer-title">Reusable Rocket Ground Clamping Structure Design And Testing</h2><button class="gallery-close" type="button" data-gallery-close aria-label="Close enlarged photo" autofocus><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg></button></div>
       <div class="gallery-stage gallery-viewer-stage">
         <img class="gallery-viewer-image" data-viewer-image alt="">
         <button class="gallery-arrow gallery-previous" type="button" data-viewer-step="-1" aria-label="Previous enlarged photo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="m14 6-6 6 6 6"/></svg></button>
